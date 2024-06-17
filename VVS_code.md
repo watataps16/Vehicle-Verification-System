@@ -2,6 +2,17 @@
 #Vehicle checker for student that login in school premises.
 
 
+This project is made by 1st year college student who are still learning about python programming language. 
+We are instructed to make a oop program using Qtdesigner that later on we are able to make it as functional.
+as a student we're are alaways stop by security to check the information about our vehicle and who owns it.
+we come up to an idea that can help to the security to check information also for students who always login and logout in entrance of our school.
+This is the start of the project of Vehicle Verification System, The rpoject is able to finish in time, but unfortunately we are only make this project functionable
+and don't even have time to update the project. Im sharing this project in the public so if someone who wants to make a project like this they can use this as reference.
+also you can make some improvements that we are unable to put. I hope this project can help to other people who need inspiration as programmer.
+
+
+Code:
+
 import datetime
 
 import sys
@@ -31,7 +42,6 @@ from username_password import Ui_Dialog6
 from welcome import Ui_Dialog3
 
 from history import Ui_Dialog
-
 
 class Window(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
