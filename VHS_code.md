@@ -1,20 +1,41 @@
 # Vehicle-Verification-System
 #Vehicle checker for student that login in school premises.
 
+
+
+
+
+
+
+
 import datetime
+
 import sys
+
 import mysql.connector
+
 from PyQt5 import QtWidgets
+
 from admin import Ui_MainW2
+
 from admin_display import Ui_Dialog5
+
 from inbox import Ui_Dialog10
+
 from input_login import Ui_Dialog2
+
 from license_expirations import Ui_Dialog9
+
 from login import Ui_MainWindow
+
 from orcr_expirations import Ui_Dialog8
+
 from plate_numbers import Ui_Dialog7
+
 from username_password import Ui_Dialog6
+
 from welcome import Ui_Dialog3
+
 from history import Ui_Dialog
 
 
