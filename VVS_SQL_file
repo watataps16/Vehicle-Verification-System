@@ -1,0 +1,58 @@
+
+DROP TABLE IF EXISTS users;
+use user_info;
+DROP TABLE IF EXISTS login_history;
+
+USE user_info;
+
+CREATE TABLE users (
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    ORCR DATE,
+    LICE DATE,
+    PLATES VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE login_history (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    login_time DATETIME NOT NULL
+);
+
+INSERT INTO users (username, password, name, ORCR, LICE, PLATES) VALUES
+    ('TUPC-23-0246', 'QUIRANTE', 'Justin Jae Quirante', '2023-10-16', '2022-12-05', 'NEE3925'),
+    ('TUPC-23-0258', 'TOGUENO', 'John Carlo Togueno', '2024-07-23', '2024-08-15', 'JER1543'), 
+    ('TUPC-23-0261', 'JAVIER', 'Jay-Ar Javier', '2022-07-23', '2024-12-15', 'KKK1231'),
+    ('TUPC-23-0233', 'DELACRUZ', 'Kenneth De La Cruz', '2027-03-16', '2024-10-06', 'OHM7622'),
+    ('TUPC-23-0251', 'SAMANIEGO', 'Tyron Samaniego', '2025-06-25', '2024-09-06', 'JEE6432'),
+    ('TUPC-23-0259', 'PADASAY', 'Amiel Padasay', '2023-08-11', '2024-07-06', 'NEJ3242'),
+    ('TUPC-23-0230', 'CUADRA', 'Christian Cuadra', '2023-07-17', '2024-08-27', 'POP3723'),
+    ('TUPC-23-0227', 'AUSAN', 'John Harvy Ausan', '2025-11-25', '2024-01-06', 'AUA9322'),
+    ('TUPC-23-0229', 'CARILLO', 'Lee Jansey Carillo', '2023-08-12', '2024-10-14', 'KHN9742'),
+    ('TUPC-23-0264', 'BENITEZ', 'Vinze Benitez', '2023-05-12', '2024-06-06', 'OYT3478'),
+    ('TUPC-23-0256', 'TAPA', 'Maeven Tapa', '2026-09-14', '2024-08-17', 'WOD2933'),
+    ('TUPC-23-0244', 'PALACIOS', 'Dona Flor Palacios', '2025-06-01', '2023-11-17', 'YFI0424'),
+    ('TUPC-23-0254', 'SANTOS', 'Reyna Santos', '2026-08-19', '2024-09-06', 'HDJ7862'),
+    ('TUPC-23-0239', 'MAIDAN', 'Alexis Maidan', '2024-05-24', '2025-08-27', 'YTS1355'),
+    ('TUPC-23-0226', 'AMADOR', 'Siegmond Amador', '2023-03-12', '2024-12-07', 'HDH5211'),
+    ('TUPC-23-0242', 'MONTOYA', 'Klint Montoya', '2025-10-04', '2024-01-17', 'YRO4618'),
+    ('TUPC-23-0253', 'SANTOS', 'Joss Santos', '2023-07-13', '2024-06-12', 'TWQ3222'),
+	('TUPC-23-0250', 'ROSANO', 'Josh Rosano', '2022-03-23', '2024-02-14', 'GWU8472'),
+    ('TUPC-23-0241', 'MANALO', 'Jayde Manalo', '2024-06-17', '2024-03-14', 'YEI6432'),
+    ('TUPC-23-0238', 'LORENZO', 'Peter Lorenzo', '2024-08-31', '2024-07-26', 'YFE2133'),
+    ('TUPC-23-0255', 'SAYSON', 'Carl Saysom', '2024-02-14', '2024-01-21', 'AYE2126'),
+    ('TUPC-23-0263', 'CAGAS', 'Dominic Cagas', '2024-09-18', '2024-05-30', 'FJE2458'),
+    ('TUPC-23-0358', 'DORONGON', 'Caroline Dorongon', '2024-05-15', '2024-10-04', 'NEE9214'),
+    ('TUPC-23-0252', 'ROLEDA', 'Godfrey Roleda', '2024-07-13', '2024-05-15', 'UWR1404'),
+    ('TUPC-23-0245', 'PRUNA', 'Margaret Pruna', '2024-09-26', '2024-07-27', 'RAR0932'),
+    ('TUPC-22-0161', 'PANAGDATO', 'Lloyd Panagdato', '2024-07-17', '2024-04-14', 'UEO0242'),
+    ('TUPC-23-0236', 'FIGUEROA', 'Jared Figueroa', '2024-11-18', '2024-04-17', 'IRU5221'),
+    ('TUPC-23-0234', 'DEGUZMAN', 'Avegail De Guzman', '2024-09-26', '2024-07-24', 'KSI1425'),
+    ('TUPC-23-0225', 'ADVINCULA', 'Kristoffer Advincula', '2024-04-19', '2024-10-26', 'ONG1416'),
+    ('TUPC-23-0260', 'GUMAPE', 'Kylie Gumape', '2024-08-25', '2024-06-14', 'JAU1424'),
+    ('TUPC-23-0262', 'ORLINO', 'Raven Orlino', '2024-07-26', '2024-03-29', 'KKF1563'),
+    ('TUPC-23-0228', 'BASCO', ' Leonardo Basco III', '2030-08-13', '2035-12-01', 'BSC1321');
+SELECT username, password, name, ORCR, LICE, PLATES FROM users;
+SELECT * FROM login_history;
+
